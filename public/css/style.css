@@ -1,0 +1,137 @@
+:root {
+    --prim: #101111;
+    --sec: #109411;
+    --tert: #ffd700;
+    --textColor:  #0057b7;
+    --headerFont: 'Fredericka the Great', cursive;
+    --textFont:'Julius Sans One', sans-serif;
+    --subheaderFont: 'Gowun Batang', serif;
+}
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaee;
+    background-image: url("../media/background-world-map-1.gif")
+}
+
+header {
+    padding: 20px 0;
+}
+
+.header-h1, h1, h2 {
+    padding: 20px 0;
+    color: var(--textColor);
+    font-family: var(--headerFont);
+    text-align: center;
+}
+
+.aside-header {
+    color: var(--textColor);
+    font-family: var(--textFont);
+    font-weight: 700;
+}
+
+
+a, .nav-link {
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #229900;
+}
+
+.text {
+    color: var(--textColor);
+    font-family: var(--headerFont);
+}
+
+/* header */
+.top-nav a {
+    text-transform: uppercase;
+}
+
+/*recipes page*/
+
+.h1 {
+    font-size: 84px;
+}
+
+.h2 {
+    font-size: 72px;
+}
+
+.h3 {
+    font-size: 56px;
+}
+
+.recipeDiv {
+    /* width: 90%; */
+    border-bottom: 2px solid darkgoldenrod;
+}
+
+.recipeDiv:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 20px;
+    border-bottom: 10px;
+    transition: .5s;
+}
+
+.recipeDiv:hover:after {
+    width: 110%;
+}
+
+
+.home-image {
+    /* max-width: 33vw; */
+    padding: 8px;
+    border-radius: 3%;
+}
+
+.list-group-item, .figcaption {
+    color: var(--tert);
+    font-size:  24px;
+    font-family: var(--subheaderFont);
+    font-weight: 600;
+}
+
+.nutrition-item {
+    font-size: 20px;
+}
+.figure {
+    border-radius: 8%;
+}
+
+.figcaption {
+    padding: 8px;
+    background-color: var(--textColor);
+}
+
+.figcap-home {
+    font-size: 20px;
+}
+
+.box-image {
+    /* max-width: 200px; */
+    /* max-height: 300px; */
+}
+
+.single-image {
+    
+}
+
+.preparation {
+    background-color: var(--textColor);
+}
+
+.footer {
+    color: var(--textColor);
+    font-family: var(--textFont);
+    font-weight: 900;
+}

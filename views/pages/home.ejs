@@ -1,0 +1,20 @@
+<%- include('../partials/header'); %>
+   
+<main class="main main-home container">
+    <div class="row justify-content-around">
+        <div class="col-md-6">
+
+            <!-- <h2 class="home-header text-center">welcome to my country page</h2> -->
+            <% let i = Math.floor(Math.random() * data.length) %>
+            <% if(data[i].media.orthographic != "") { %>
+                <img src="<%= data[i].media.orthographic %>" alt="<%= data.name %>" class="img-fluid home-image">
+             <% } else { %>
+                <img src="<%= data[i].media.emblem %>" alt="<%= data.name %>" class="img-fluid home-image">
+            <% } %>
+            <h3 class="home-header text-center"><%= data[i].name %></h3>
+        </div>
+    </div>
+</main>
+ 
+<%- include('../partials/footer'); %>
+

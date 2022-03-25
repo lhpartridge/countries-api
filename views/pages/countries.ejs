@@ -1,0 +1,28 @@
+<%- include('../partials/header'); %>
+    
+    <main class="main main-countries container">
+        <h2 class="main-h2"><%= name %></h2>
+        <section class="section section-country">
+            <div class="row">
+                <% data.forEach(item => { %>
+                    <div class="col-md-4">
+                        <figure class="figure country-figure">
+                            <a href="/countries/<%= item.id %>">
+                                <img src="<%= item.media.emblem %>" alt="<%= item.name %> flag" class="img-fluid">
+                                <figcaption class="figcaption fig-cap-abbreviation">
+                                    <%= item.abbreviation %>    <%= item.name %>
+                                </figcaption>
+                                <figcaption class="figcaption fig-cap-capital">
+                                    <% item.capital %>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                <% }) %>
+            </div>
+        </section>
+    </main>
+
+
+    
+    <%- include('../partials/footer'); %>

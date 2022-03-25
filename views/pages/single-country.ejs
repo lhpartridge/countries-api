@@ -1,0 +1,42 @@
+<%- include('../partials/header') %>
+
+<main class="main main-single container">
+    <h2 class="main-h2 text-center"><%= name %></h2>
+    <section class="section section-single row justify-content-between">
+
+        <!-- previous and next -->
+        <div class="prev-and-next d-flex justify-content-around">
+            <p class="prev">
+                <% if(data.id > 1) { %>
+                    <a href="/countries/<%= data.id - 1%> ">Previous</a>
+                <% } %>
+            </p>
+
+            <figure class="figure figure-single col-md-6">
+                <% if(data.media.orthographic != "") { %>
+                    <img src="<%= data.media.orthographic %>" alt="<%= name %> map" class="img-fluid single-img">
+                <% } else { %>
+                    <img src="<%= data.media.emblem %>" alt="<%= name %> emblem" class="img-fluid single-img">
+                <% } %> 
+                <div class="row">
+                    <div class="col-md-8">
+                        <figcaption class="figcaption figcap-single">Capital:  <%= data.capital %></figcaption>
+                        <figcaption class="figcaption figcap-single">Currency:  <%= data.currency %></figcaption>
+                        <figcaption class="figcaption figcap-single">Population:  <%= data.population %></figcaption>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<%= data.media.flag %>" alt="<%= name %>" class="img-fluid">
+                    </div>
+                </div>
+            </figure>
+
+            <p class="next">
+                <a href="/countries/<%= data.id + 1 %>">Next</a>
+
+            </p>
+        </div>
+
+    </section>
+</main>
+
+<%- include('../partials/footer') %>
