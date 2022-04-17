@@ -3,8 +3,6 @@
 <main class="main main-home container">
     <div class="row justify-content-around">
         <div class="col-md-6">
-
-            <!-- <h2 class="home-header text-center">welcome to my country page</h2> -->
             <% let i = Math.floor(Math.random() * data.length) %>
             <% if(data[i].media.orthographic != "") { %>
                 <img src="<%= data[i].media.orthographic %>" alt="<%= data.name %>" class="img-fluid home-image">

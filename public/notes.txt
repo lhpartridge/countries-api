@@ -1,0 +1,5 @@
+This API was created by Lorraine Partridge as a project for the Mississippi Coding Academies 2021 Cohort.  It uses a sample API from https://sampleapis.com/.  The pages were built with Bootstrap 5.1, EJS, and Node.  
+
+
+
+
